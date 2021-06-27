@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  padding: 50px;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+}
+
+.sectionY {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.containerY {
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  scroll-snap-type: y mandatory; /* proximity */
+  overflow-y: scroll;
+}
+
+.one {
+  background: rgb(36, 164, 163);
+}
+
+.tow {
+  background: rgb(211, 79, 79);
+}
+
+.three {
+  background: rgb(67, 91, 175);
+}
+
+.four {
+  background: lightcoral;
+}
+.five {
+  background: chartreuse;
+}
+
+/* SectionX */
+
+.containerX {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+}
+
+.sectionX {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex: none;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.sectionX i {
+  cursor: pointer;
+}
