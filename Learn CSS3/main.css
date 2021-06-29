@@ -1,0 +1,99 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Defaults */
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+/* General clases */
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+.dark {
+  background: #333;
+  color: #fff;
+}
+
+/* Specifics */
+body {
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+
+.navbar__title {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.navbar__navmenu {
+  width: 100%;
+}
+
+.navbar__list {
+  text-align: right;
+  display: block;
+}
+
+.navbar__list-item {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+.navbar__list-item:last-child {
+  margin-right: 0;
+}
+
+.navbar__list-link {
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.post {
+  width: 250px;
+  border: 1px solid #000;
+  border-radius: 25px;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 4px 4px 0 #333;
+}
+
+.post__img {
+  display: block;
+  margin: 1rem auto;
+  border-radius: 25px;
+  width: 100%;
+  border: 1px solid #eee;
+}
